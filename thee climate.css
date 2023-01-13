@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+  }
+
+
+@keyframes color {
+    0%{color: #ff0000;}
+    15%{color: #ff7f00;}
+    30%{color: #ffff00;}
+    45%{color: #40ff00;}
+    60%{color: rgb(0, 238, 255);}
+    75%{color: #0084ff;}
+    90%{color: #8f00ff;}
+    100%{color: #ff2121;}
+}
+
+.text{
+    animation: color 5s infinite;
+    font-family: 'Almarai', sans-serif;
+    font-size: xx-large;
+    border: white 3px solid;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 2%;
+
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.442) !important;
+}
+
+.text:hover{
+    opacity: 50%;
+    transition: all 1s;
+}
+
+.img1{
+    width: 50%;
+    scale: 0.9;
+
+}
+
+
+
+
+#title1{
+    text-align: center;
+    color: #fff;
+    font-size: 30%;
+    font-family: 'Almarai', sans-serif;
+}
+
+.btn{
+ width: 200px;
+   margin-left: 50%;
+   margin-top: 10%;
+margin-bottom: 30px;
+
+}
+
+.btn a{
+    text-decoration: none;
+    color: #003436;
+}
+.btn a:focus{
+    color: rgb(0, 0, 0);
+}
+
+.box
+{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0,0,0.5);
+overflow: hidden;
+border-radius: 20px;
+margin-left: 10%;
+padding: 15px;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #0e1538;
+    border-radius: 16px;
+}
+
+
+@keyframes animate{
+    
+        0%
+        {
+            transform: rotate(0deg);
+            background: linear-gradient(#ff0000,#ff7f00);
+        }
+        30%{
+            background: linear-gradient(#ffff00,#40ff00);
+    
+        }
+        60%{
+            background: linear-gradient(#0000ff,#4b0082);
+        }
+        90%{
+            background: linear-gradient(#8f00ff,#ff2121);
+        }
+        100%
+        {
+            transform: rotate(360deg);
+        }
+        
+    }
+    
+    
+.box::before{
+content: ''; 
+ position: absolute;
+ width: 100px;
+ height: 160%;
+ background: linear-gradient(#00ccff,#d400d4);
+animation: animate 4s linear infinite;
+
+}
+.box h2{
+    color: #fff;
+    position: relative;
+    font-size: medium;
+    z-index: 10;
+}
